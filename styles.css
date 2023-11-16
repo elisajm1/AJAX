@@ -4,12 +4,14 @@ body {
   background-color: #f5f5f5; /* Calm background color */
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 img {
   max-width: 100%;
   max-height: 400px;
   margin-top: 20px;
+  transition: transform 0.3s ease; /* Smooth scale transition on hover */
 }
 
 .container {
@@ -19,16 +21,19 @@ img {
   border: 2px solid #b4cc8c; /* Border color */
   padding: 20px;
   background-color: #ffffff; /* White background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Slightly adjusted box shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
 }
 
 h1 {
-  margin-top: 20px;
+  margin-top: 25px;
   color: #5c7f4c; /* Title color */
+  transition: color 0.3s ease; /* Smooth transition for title color */
 }
 
 .search-section {
-  margin-top: 20px;
+  margin-top: 10px; /* Lowered margin for the search section */
+  transition: margin 0.3s ease; /* Smooth transition for margin */
 }
 
 label {
@@ -39,10 +44,22 @@ label {
 select, button {
   padding: 10px;
   font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for button background color */
+}
+
+select:hover, button:hover {
+  background-color: #95b87b; /* Darker background color on hover */
 }
 
 dog-images {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img:hover {
+  transform: scale(1.05); /* Scale up on hover */
 }
 
 img {
@@ -51,3 +68,4 @@ img {
   border: 7px solid #b4cc8c; /* Border around images */
   margin-bottom: 10px;
 }
+
