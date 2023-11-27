@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breed Image</title>
-    
-        <link rel="stylesheet" href="styles.css">
-          
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workshop 7</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Tassunaattori</h1>
 
-        <label for="breedSelect">Valitse koirarotu:</label>
-    <select id="breedSelect" onchange="fetchBreedImage()">
-        </select>
+    <header>
+      <main>
+        <h2>Koiranaattori</h2>
+        <p>Paina nappia ja koiranaattori <a href="https://dog.ceo/dog-api/">Dog API</a> lataa sinulle satunnaisia koirankuvia</p>
+  
+  <img src="https://images.dog.ceo/breeds/redbone/n02090379_3899.jpg" id="myImage"><br>
 
-   
-    <div id="imageContainer">
-        </div>
-    
-    <script src="main.js"></script>
+  <button>Paina tästä</button>
 
+</main>
+      </header>
+
+    <div id="animal-info"></div>
+    <script src="./main.js"></script>
 </body>
 </html>
+
